@@ -504,7 +504,7 @@
 <div id="toast" class="toast"></div>
 
 <!-- Payment Modal (NEW method) -->
-<div id="paymentModal" class="modal-backdrop" aria-hidden="true">
+<div id="paymentModal" class="modal-backdrop" aria-hidden="true" style="display:none;">
   <div class="modal" role="dialog" aria-modal="true">
     <h3>Payment Details</h3>
     <p class="note">Amount is fixed to <strong>650</strong>. Fill the payment details and upload transaction screenshot. Admin will verify and approve.</p>
@@ -521,24 +521,34 @@
 
       <div class="flex-row">
         <div class="col">
-          <label>Payment From (Mobile Number) <input id="pay_from_number" maxlength="11" inputmode="numeric" placeholder="03XXXXXXXXX" required /></label>
+          <label>Payment From (Mobile Number) 
+            <input id="pay_from_number" maxlength="11" inputmode="numeric" 
+                   placeholder="03XXXXXXXXX" required />
+          </label>
         </div>
         <div class="col">
           <label>Transaction ID / Ref <input id="pay_txn" required /></label>
         </div>
       </div>
 
-      <label>Upload Transaction Screenshot (required) <input id="pay_screenshot" type="file" accept="image/*" required /></label>
-      <img id="pay_preview" class="file-preview hidden" alt="Screenshot preview" />
+      <label>
+        Upload Transaction Screenshot (required) 
+        <input id="pay_screenshot" type="file" accept="image/*" required />
+        <div class="small">Max size: 2MB • Formats: JPG, PNG</div>
+      </label>
+      
+      <div id="previewContainer" style="margin-top: 10px;">
+        <img id="pay_preview" class="file-preview hidden" 
+             alt="Screenshot preview" style="max-width:100%; max-height:200px;" />
+      </div>
 
       <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
-        <button type="button" id="cancelPay" class="btn">Cancel</button>
+        <button type="button" id="cancelPay" class="btn btn-ghost">Cancel</button>
         <button type="submit" class="btn btn-primary">Submit Payment & Save Application</button>
       </div>
     </form>
   </div>
 </div>
-
 <script>
 /* ------------------ CONFIG ------------------ */
 const ADMIN_PASSWORD = 'uk6091';
@@ -668,23 +678,57 @@ function openPaymentModal(snapshot){
   q('pay_from_number').value = '';
   q('pay_txn').value = '';
   q('pay_screenshot').value = '';
-  q('pay_preview').classList.add('hidden');
+  
+  // Reset preview
+  const preview = q('pay_preview');
+  preview.src = '';
+  preview.classList.add('hidden');
+  
+  // Show modal
   paymentModal.style.display = 'flex';
   paymentModal.setAttribute('aria-hidden','false');
+  
+  // Focus on first input
+  setTimeout(() => q('pay_from_number').focus(), 100);
 }
+
 q('cancelPay').addEventListener('click', ()=> {
   paymentModal.style.display = 'none';
   paymentModal.setAttribute('aria-hidden','true');
   currentSnapshot = null;
+
 });
 
+// preview screenshot when selected
 // preview screenshot when selected
 q('pay_screenshot').addEventListener('change', function(){
   const f = this.files && this.files[0];
   const img = q('pay_preview');
-  if(!f){ img.src=''; img.classList.add('hidden'); return; }
+  const container = q('previewContainer');
+  
+  if(!f){ 
+    img.src=''; 
+    img.classList.add('hidden'); 
+    return; 
+  }
+  
+  // File size check (optional)
+  if(f.size > 3 * 1024 * 1024) { // 2MB limit
+    alert('File size should be less than 3MB');
+    this.value = '';
+    return;
+  }
+  
   const reader = new FileReader();
-  reader.onload = function(){ img.src = reader.result; img.classList.remove('hidden'); };
+  reader.onload = function(){ 
+    img.src = reader.result; 
+    img.classList.remove('hidden');
+    
+    // Ensure image doesn't overflow
+    img.style.maxWidth = '100%';
+    img.style.maxHeight = '80px';
+    img.style.objectFit = 'contain';
+  };
   reader.readAsDataURL(f);
 });
 
