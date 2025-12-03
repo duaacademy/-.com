@@ -534,7 +534,7 @@
       <label>
         Upload Transaction Screenshot (required) 
         <input id="pay_screenshot" type="file" accept="image/*" required />
-        <div class="small">Max size: 2MB • Formats: JPG, PNG</div>
+        <div class="small">Max size: 10MB • Formats: JPG, PNG</div>
       </label>
       
       <div id="previewContainer" style="margin-top: 10px;">
@@ -713,8 +713,8 @@ q('pay_screenshot').addEventListener('change', function(){
   }
   
   // File size check (optional)
-  if(f.size > 3 * 1024 * 1024) { // 2MB limit
-    alert('File size should be less than 3MB');
+  if(f.size > 10 * 1024 * 1024) { // 10MB limit
+    alert('File size should be less than 10MB');
     this.value = '';
     return;
   }
