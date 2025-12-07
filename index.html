@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dua Educational Portal — Complete (Payments Updated)</title>
+  <title>Dua Educational Portal — Complete (Fixed Storage)</title>
   <style>
     :root{
       --bg: linear-gradient(135deg,#16d2e7,#06434b);
@@ -216,9 +216,8 @@
       background:rgba(190, 6, 246, 0.6);
       border:1px solid rgba(163, 5, 5, 0.04);
     }
-
+    .footer-links svg{ width:18px; height:18px }
   </style>
-  
 </head>
 <body>
 <div class="wrap">
@@ -227,8 +226,8 @@
     <div class="brand">
       <img id="siteLogo" src="logo dua Academy kamoon shaheed.PNG" alt="Logo" onerror="this.style.display='none'">
       <div>
-        <h1></h1>
-        <div class="small" style="color:rgba(48, 15, 216, 0.9)"></div>
+        <h1>Dua Educational Academy</h1>
+        <div class="small" style="color:rgba(48, 15, 216, 0.9)">Kamoon Shaheed - Online Portal</div>
       </div>
     </div>
     <nav>
@@ -236,11 +235,10 @@
       <a onclick="openSection('apply')">Apply</a>
       <a onclick="openSection('slip')">Slip</a>
       <a onclick="openSection('result')">Result</a>
-      <a onclick="openSection('admin')"></a>
-      <a onclick="openSection('marksUpload')"></a>
+      <a onclick="openSection('admin')">Admin</a>
+      <a onclick="openSection('marksUpload')">Upload Marks</a>
     </nav>
   </header>
-
 
   <main class="layout">
     <section id="home" class="card home-card">
@@ -255,109 +253,105 @@
         <button class="btn btn-primary" onclick="openSection('slip')" style="width:auto;">Slip</button>
         <button class="btn btn-primary" onclick="openSection('result')" style="width:auto;">Result</button>
         <button class="btn btn-primary" onclick="openSection('admin')" style="width:auto;">Admin</button>
-        <button class="btn btn-primary" onclick="openSection('marksUpload')" style="width:auto;">My portal</button>
+        <button class="btn btn-primary" onclick="openSection('marksUpload')" style="width:auto;">Upload Marks</button>
       </div>
-       <div style="display:flex;justify-content:center;gap:8px;margin-top:8px;"> 
-      <h3> Important Note </h3>
-      </div>
-      <h4>English Version: </h4>
-
-</h4>When a student fills out the form and submits it, they will receive their roll number. After receiving the roll number, they will be able to check their marks slip. The slip will appear on the portal after the form payment is completed and approved by the admin. Admin approval will be completed within 24 hours.</h4>
- 
-        <h4>Sindhi Version:</h4>
-
-</h4>
-جڏهن شاگرد فارم ڀري ڪري سبمٽ ڪندو، تڏهن کيس پنهنجو رول نمبر ملي ويندو. رول نمبر ملڻ کان پوءِ، هو پنهنجي مارڪس سلپ چيڪ ڪري سگهندو. فارم جي ادائيگي ۽ ايڊمن جي منظوري ٿيڻ کان پوءِ سلپ پورٹل تي ظاهر ٿي ويندي. ايڊمن جي منظوري 24 ڪلاڪن اندر ٿي ويندي.</h4>
-      <div style="display:flex;justify-content:center;gap:8px;margin-top:8px;">
-      <img src="AD02.jpeg" width="340" height="560" alt="">
-       </div>
        
-       <div style="display:flex;justify-content:center;gap:8px;margin-top:8px;">
-      <img src="AD 1.jpeg" width="340" height="560" alt="">
-     </div>
+      <div style="margin-top:20px; padding:15px; background:#f0f9ff; border-radius:10px;">
+        <h3 style="color:#4f05fd; text-align:center;">Important Note</h3>
+        
+        <h4>English Version:</h4>
+        <p style="text-align:justify; color:#555;">
+          When a student fills out the form and submits it, they will receive their roll number. 
+          After receiving the roll number, they will be able to check their marks slip. 
+          The slip will appear on the portal after the form payment is completed and approved by the admin. 
+          Admin approval will be completed within 24 hours.
+        </p>
 
-      <div style="display:flex;flex-wrap:wrap;justify-content:center;margin-top:12px">
+        <h4>Sindhi Version:</h4>
+        <p style="text-align:justify; color:#555; direction:rtl;">
+          جڏهن شاگرد فارم ڀري ڪري سبمٽ ڪندو، تڏهن کيس پنهنجو رول نمبر ملي ويندو. 
+          رول نمبر ملڻ کان پوءِ، هو پنهنجي مارڪس سلپ چيڪ ڪري سگهندو. 
+          فارم جي ادائيگي ۽ ايڊمن جي منظوري ٿيڻ کان پوءِ سلپ پورٹل تي ظاهر ٿي ويندي. 
+          ايڊمن جي منظوري 24 ڪلاڪن اندر ٿي ويندي.
+        </p>
+      </div>
+
+      <div style="display:flex;justify-content:center;gap:8px;margin-top:8px; flex-wrap:wrap;">
+        <img src="AD02.jpeg" width="340" height="560" alt="" style="border-radius:10px; margin:5px;">
+        <img src="AD 1.jpeg" width="340" height="560" alt="" style="border-radius:10px; margin:5px;">
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;margin-top:12px; gap:15px;">
         <div class="small-card">
           <div class="card-header">Director</div>
-          <img src="p.jpg" alt="" style="width:120px;height:120px;border-radius:50%;margin-top:12px" onerror="this.style.display='none'">
+          <img src="p.jpg" alt="" style="width:120px;height:120px;border-radius:50%;margin-top:12px" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"120\"><rect width=\"120\" height=\"120\" fill=\"%23f0f0f0\"/><text x=\"60\" y=\"60\" font-family=\"Arial\" font-size=\"14\" fill=\"%23999\" text-anchor=\"middle\" dy=\".3em\">No Image</text></svg>'">
           <div class="name">Noor Muhammad Musafir Soomro</div>
           <div style="margin:8px 0"><a class="call-btn" href="tel:03083442741">📞 Call</a></div>
         </div>
         <div class="small-card">
           <div class="card-header">Pattern</div>
-          <img src="Sir gada hussain.jpg" alt="" style="width:120px;height:120px;border-radius:50%;margin-top:12px" onerror="this.style.display='none'">
+          <img src="Sir gada hussain.jpg" alt="" style="width:120px;height:120px;border-radius:50%;margin-top:12px" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"120\"><rect width=\"120\" height=\"120\" fill=\"%23f0f0f0\"/><text x=\"60\" y=\"60\" font-family=\"Arial\" font-size=\"14\" fill=\"%23999\" text-anchor=\"middle\" dy=\".3em\">No Image</text></svg>'">
           <div class="name">Gada Hussain Soomro</div>
           <div style="margin:8px 0"><a class="call-btn" href="tel:03083442741">📞 Call</a> <a class="wa-btn" href="https://wa.me/923083442741">WhatsApp</a></div>
         </div>
         <div class="small-card">
           <div class="card-header">Teacher</div>
-          <img src="sir Ahmed.jpg" alt="" style="width:120px;height:120px;border-radius:50%;margin-top:12px" onerror="this.style.display='none'">
+          <img src="sir Ahmed.jpg" alt="" style="width:120px;height:120px;border-radius:50%;margin-top:12px" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"120\"><rect width=\"120\" height=\"120\" fill=\"%23f0f0f0\"/><text x=\"60\" y=\"60\" font-family=\"Arial\" font-size=\"14\" fill=\"%23999\" text-anchor=\"middle\" dy=\".3em\">No Image</text></svg>'">
           <div class="name">Ahmed Ali Chachar</div>
           <div style="margin:8px 0"><a class="call-btn" href="tel:03002627384">📞 Call</a> <a class="wa-btn" href="https://wa.me/923002627384">WhatsApp</a></div>
         </div>
         
         <div class="small-card">
           <div class="card-header">Web Dev</div>
-          <img src="ubedulla khan.PNG" alt="" style="width:120px;height:120px;border-radius:50%;margin-top:12px" onerror="this.style.display='none'">
+          <img src="ubedulla khan.PNG" alt="" style="width:120px;height:120px;border-radius:50%;margin-top:12px" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"120\"><rect width=\"120\" height=\"120\" fill=\"%23f0f0f0\"/><text x=\"60\" y=\"60\" font-family=\"Arial\" font-size=\"14\" fill=\"%23999\" text-anchor=\"middle\" dy=\".3em\">No Image</text></svg>'">
           <div class="name">Ubedullah Khan</div>
           <div style="margin:8px 0"><a class="call-btn" href="tel:03013402708">📞 Call</a> <a class="wa-btn" href="https://wa.me/923013402708">WhatsApp</a></div>
-
         </div>
       </div>
      
-  <style>
-        .footer-links svg{ width:18px; height:18px }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>fallow</h1>
-    <p>fallow us faceebook & whatsapp group more detail   </p>
+      <div class="footer-links" style="margin-top:30px;">
+        <a href="https://www.facebook.com/groups/600983602483223/?ref=share&mibextid=NSMWBT" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8.9v-3h1.6V9.1c0-1.6.95-2.5 2.4-2.5.7 0 1.4.05 2 .1v2.3h-1.2c-1 0-1.3.6-1.3 1.2V12h2.3l-.37 3h-1.95v7A10 10 0 0 0 22 12z"/>
+          </svg>
+          Facebook Group
+        </a>
 
-    <div class="footer-links" aria-hidden="true">
-      <a href="https://www.facebook.com/groups/600983602483223/?ref=share&mibextid=NSMWBT" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8.9v-3h1.6V9.1c0-1.6.95-2.5 2.4-2.5.7 0 1.4.05 2 .1v2.3h-1.2c-1 0-1.3.6-1.3 1.2V12h2.3l-.37 3h-1.95v7A10 10 0 0 0 22 12z"/>
-        </svg>
-        Facebook Group
-      </a>
+        <a href="https://chat.whatsapp.com/GzjZLkgNvS8LQpIpqm1li5?mode=hqrt1" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.5 3.5A11.8 11.8 0 0 0 3.5 20.5L3 22l1.6-.42A11.8 11.8 0 0 0 20.5 3.5zM12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zM17.2 14.2c-.3-.15-1.7-.85-2-.95-.3-.1-.5-.15-.7.15-.2.3-.8.95-.95 1.15-.15.2-.3.2-.6.07-.3-.13-1.25-.45-2.4-1.48-.9-.8-1.5-1.78-1.68-2.08-.17-.3 0-.46.13-.6.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2 0-.4-.05-.55-.05-.15-.7-1.68-.96-2.3-.25-.6-.5-.5-.7-.5h-.6c-.2 0-.5.07-.78.34-.27.27-1.04 1.02-1.04 2.48 0 1.45 1.06 2.85 1.2 3.05.13.2 2.07 3.18 5 4.45 2.9 1.27 2.9 0 3.24-.03.34-.03 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.27-.15-.57-.3z"/>
+          </svg>
+          WhatsApp Group 
+        </a>
+      </div>
 
-      <a href="https://chat.whatsapp.com/GzjZLkgNvS8LQpIpqm1li5?mode=hqrt1" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M20.5 3.5A11.8 11.8 0 0 0 3.5 20.5L3 22l1.6-.42A11.8 11.8 0 0 0 20.5 3.5zM12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zM17.2 14.2c-.3-.15-1.7-.85-2-.95-.3-.1-.5-.15-.7.15-.2.3-.8.95-.95 1.15-.15.2-.3.2-.6.07-.3-.13-1.25-.45-2.4-1.48-.9-.8-1.5-1.78-1.68-2.08-.17-.3 0-.46.13-.6.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2 0-.4-.05-.55-.05-.15-.7-1.68-.96-2.3-.25-.6-.5-.5-.7-.5h-.6c-.2 0-.5.07-.78.34-.27.27-1.04 1.02-1.04 2.48 0 1.45 1.06 2.85 1.2 3.05.13.2 2.07 3.18 5 4.45 2.9 1.27 2.9 0 3.24-.03.34-.03 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.27-.15-.57-.3z"/>
-        </svg>
-        WhatsApp Group 
-      </a>
-    </div>
-  </div>
+      <div class="social-bar" aria-hidden="false" aria-label="Social links">
+        <a
+          class="social-btn facebook"
+          href="https://www.facebook.com/groups/600983602483223/?ref=share&mibextid=NSMWBT"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook Group"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8.9v-3h1.6V9.1c0-1.6.95-2.5 2.4-2.5.7 0 1.4.05 2 .1v2.3h-1.2c-1 0-1.3.6-1.3 1.2V12h2.3l-.37 3h-1.95v7A10 10 0 0 0 22 12z"/>
+          </svg>
+          <span class="tooltip" role="tooltip">Facebook Group</span>
+        </a>
 
-  <div class="social-bar" aria-hidden="false" aria-label="Social links">
-    <a
-      class="social-btn facebook"
-      href="https://www.facebook.com/groups/600983602483223/?ref=share&mibextid=NSMWBT"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Facebook گروپ — کھولیں"
-    >
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-        <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8.9v-3h1.6V9.1c0-1.6.95-2.5 2.4-2.5.7 0 1.4.05 2 .1v2.3h-1.2c-1 0-1.3.6-1.3 1.2V12h2.3l-.37 3h-1.95v7A10 10 0 0 0 22 12z"/>
-      </svg>
-      <span class="tooltip" role="tooltip">Facebook گروپ</span>
-    </a>
-
-    <a
-      class="social-btn whatsapp"
-      href="https://chat.whatsapp.com/GzjZLkgNvS8LQpIpqm1li5?mode=hqrt1"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="WhatsApp گروپ — کھولیں"
-    >
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-        <path d="M20.5 3.5A11.8 11.8 0 0 0 3.5 20.5L3 22l1.6-.42A11.8 11.8 0 0 0 20.5 3.5zM12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zM17.2 14.2c-.3-.15-1.7-.85-2-.95-.3-.1-.5-.15-.7.15-.2.3-.8.95-.95 1.15-.15.2-.3.2-.6.07-.3-.13-1.25-.45-2.4-1.48-.9-.8-1.5-1.78-1.68-2.08-.17-.3 0-.46.13-.6.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2 0-.4-.05-.55-.05-.15-.7-1.68-.96-2.3-.25-.6-.5-.5-.7-.5h-.6c-.2 0-.5.07-.78.34-.27.27-1.04 1.02-1.04 2.48 0 1.45 1.06 2.85 1.2 3.05.13.2 2.07 3.18 5 4.45 2.9 1.27 2.9 0 3.24-.03.34-.03 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.27-.15-.57-.3z"/>
-      </svg>
-      <span class="tooltip" role="tooltip">WhatsApp گروپ</span>
-    </a>
-  </div>
+        <a
+          class="social-btn whatsapp"
+          href="https://chat.whatsapp.com/GzjZLkgNvS8LQpIpqm1li5?mode=hqrt1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp Group"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M20.5 3.5A11.8 11.8 0 0 0 3.5 20.5L3 22l1.6-.42A11.8 11.8 0 0 0 20.5 3.5zM12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zM17.2 14.2c-.3-.15-1.7-.85-2-.95-.3-.1-.5-.15-.7.15-.2.3-.8.95-.95 1.15-.15.2-.3.2-.6.07-.3-.13-1.25-.45-2.4-1.48-.9-.8-1.5-1.78-1.68-2.08-.17-.3 0-.46.13-.6.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2 0-.4-.05-.55-.05-.15-.7-1.68-.96-2.3-.25-.6-.5-.5-.7-.5h-.6c-.2 0-.5.07-.78.34-.27.27-1.04 1.02-1.04 2.48 0 1.45 1.06 2.85 1.2 3.05.13.2 2.07 3.18 5 4.45 2.9 1.27 2.9 0 3.24-.03.34-.03 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.27-.15-.57-.3z"/>
+          </svg>
+          <span class="tooltip" role="tooltip">WhatsApp Group</span>
+        </a>
+      </div>
 
       <div class="teacher-gallery" aria-hidden="false">
         <img src="sir gada.PNG" alt="Sir Gada" onerror="this.style.display='none'">
@@ -373,13 +367,10 @@
         <img src="p12.jpg" alt="Ubedullah Khan" onerror="this.style.display='none'">
         <img src="p10.jpg" alt="Sir Niaz" onerror="this.style.display='none'">
         <img src="p11.jpg" alt="Sir Niaz" onerror="this.style.display='none'">
-        
-        
-        </div>
       </div>
     </section>
 
-    <!-- Apply -->
+    <!-- Apply Section -->
     <section id="apply" class="card hidden">
       <div style="padding:6px;background:#f5f7f8;border-radius:10px;text-align:center">
         <h3>Dua Educational Academy Kamoon Shaheed</h3>
@@ -439,7 +430,7 @@
       </div>
     </section>
 
-    <!-- Slip -->
+    <!-- Slip Section -->
     <section id="slip" class="card hidden">
       <div style="padding:12px;background:#f0f9ff;border-radius:10px;text-align:center">
         <img src="logo dua Academy kamoon shaheed.PNG" class="stu-photo" alt="Logo" onerror="this.style.display='none'">
@@ -453,7 +444,7 @@
       </div>
     </section>
 
-    <!-- Result -->
+    <!-- Result Section -->
     <section id="result" class="card hidden">
       <div style="padding:8px;background:#f6f7f8;border-radius:6px;text-align:center">
         <img src="logo dua Academy kamoon shaheed.PNG" width="200" height="180" alt="Logo" onerror="this.style.display='none'">
@@ -467,7 +458,7 @@
       </div>
     </section>
 
-    <!-- Admin -->
+    <!-- Admin Section -->
     <section id="admin" class="card hidden">
       <div style="padding:12px;background:#f0f9ff;border-radius:10px;text-align:center">
         <img src="logo dua Academy kamoon shaheed.PNG" width="200" height="200" alt="Logo" onerror="this.style.display='none'">
@@ -494,7 +485,7 @@
       </div>
     </section>
 
-    <!-- Marks Upload -->
+    <!-- Marks Upload Section -->
     <section id="marksUpload" class="card hidden">
       <div style="padding:12px;background:#f0f9ff;border-radius:10px;text-align:center">
         <img src="logo dua Academy kamoon shaheed.PNG" width="200" height="200" alt="Logo" onerror="this.style.display='none'">
@@ -512,39 +503,40 @@
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer style="text-align:center;margin-top:18px" class="small">© Dua Educational Academy Kamoon Shaheed Portal </footer>
+  <footer style="text-align:center;margin-top:18px" class="small">
+    © Dua Educational Academy Kamoon Shaheed Portal • All Rights Reserved
+  </footer>
 </div>
 
 <!-- Toast -->
 <div id="toast" class="toast"></div>
 
-<!-- Payment Modal (NEW method) -->
+<!-- Payment Modal -->
 <div id="paymentModal" class="modal-backdrop" aria-hidden="true" style="display:none;">
   <div class="modal" role="dialog" aria-modal="true">
     <h3>Payment Details</h3>
     <p class="note">Amount is fixed to <strong>650</strong>. Fill the payment details and upload transaction screenshot. Admin will verify and approve.</p>
-    <h5>Jazzcash:  03083842741 (GADA hUSSAIN) </h5>
+    <h5>Jazzcash: 03083842741 (GADA HUSSAIN)</h5>
     <form id="paymentForm">
-      <div class="flex-row">
-        <div class="col">
+      <div style="display:flex;gap:10px;margin-bottom:10px;">
+        <div style="flex:1;">
           <label>Student Name <input id="pay_student_name" required /></label>
         </div>
-        <div class="col">
+        <div style="flex:1;">
           <label>Amount <input id="pay_amount" readonly /></label>
         </div>
       </div>
 
-      <div class="flex-row">
-        <div class="col">
+      <div style="display:flex;gap:10px;margin-bottom:10px;">
+        <div style="flex:1;">
           <label>Payment From (Mobile Number) 
             <input id="pay_from_number" maxlength="11" inputmode="numeric" 
                    placeholder="03XXXXXXXXX" required />
           </label>
         </div>
-        <div class="col">
+        <div style="flex:1;">
           <label>Transaction ID / Ref <input id="pay_txn" required /></label>
         </div>
       </div>
@@ -556,8 +548,8 @@
       </label>
       
       <div id="previewContainer" style="margin-top: 10px;">
-        <img id="pay_preview" class="file-preview hidden" 
-             alt="Screenshot preview" style="max-width:100%; max-height:200px;" />
+        <img id="pay_preview" class="hidden" 
+             alt="Screenshot preview" style="max-width:100%; max-height:150px; border-radius:5px;" />
       </div>
 
       <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
@@ -567,25 +559,87 @@
     </form>
   </div>
 </div>
+
 <script>
 /* ------------------ CONFIG ------------------ */
 const ADMIN_PASSWORD = 'uk6091';
-const ACADEMY_NAME = 'Dua Educational Academy';
+const ACADEMY_NAME = 'Dua Educational Academy Kamoon Shaheed';
 const FIXED_AMOUNT = 650;
 
 /* ------------------ HELPERS ------------------ */
 function q(id){ return document.getElementById(id); }
-function readApps(){ try{ return JSON.parse(localStorage.getItem('apps')||'[]'); }catch(e){ return []; } }
-function readMarks(){ try{ return JSON.parse(localStorage.getItem('marks')||'[]'); }catch(e){ return []; } }
-function saveApps(arr){ localStorage.setItem('apps', JSON.stringify(arr)); }
-function saveMarks(arr){ localStorage.setItem('marks', JSON.stringify(arr)); }
-function showToast(msg, time=3500){ const t=q('toast'); t.textContent=msg; t.style.display='block'; setTimeout(()=> t.style.display='none', time); }
-function escapeHtml(s){ return (s||'').toString().replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'); }
+
+function readApps(){ 
+  try{ 
+    const data = localStorage.getItem('apps');
+    if(!data) return [];
+    const parsed = JSON.parse(data);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch(e){ 
+    console.error('Error reading apps:', e);
+    return []; 
+  }
+}
+
+function readMarks(){ 
+  try{ 
+    const data = localStorage.getItem('marks');
+    if(!data) return [];
+    const parsed = JSON.parse(data);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch(e){ 
+    console.error('Error reading marks:', e);
+    return []; 
+  }
+}
+
+function saveApps(arr){
+  try{
+    localStorage.setItem('apps', JSON.stringify(arr));
+    // Backup in sessionStorage
+    sessionStorage.setItem('apps_backup', JSON.stringify(arr));
+    console.log('Apps saved successfully. Total:', arr.length);
+    return true;
+  } catch(e){
+    console.error('Error saving apps:', e);
+    alert('Storage error: ' + e.message);
+    return false;
+  }
+}
+
+function saveMarks(arr){
+  try{
+    localStorage.setItem('marks', JSON.stringify(arr));
+    return true;
+  } catch(e){
+    console.error('Error saving marks:', e);
+    return false;
+  }
+}
+
+function showToast(msg, time=3500){ 
+  const t = q('toast'); 
+  t.textContent = msg; 
+  t.style.display = 'block'; 
+  setTimeout(() => t.style.display = 'none', time); 
+}
+
+function escapeHtml(s){ 
+  if(!s) return '';
+  return s.toString()
+    .replaceAll('&','&amp;')
+    .replaceAll('<','&lt;')
+    .replaceAll('>','&gt;')
+    .replaceAll('"','&quot;')
+    .replaceAll("'",'&#039;');
+}
 
 /* ------------------ UI control ------------------ */
 const sections = ['home','apply','slip','result','admin','marksUpload'];
 function openSection(id){
-  sections.forEach(s => document.getElementById(s).classList.toggle('hidden', s!==id));
+  sections.forEach(s => {
+    q(s).classList.toggle('hidden', s !== id);
+  });
   window.scrollTo({top:0,behavior:'smooth'});
 }
 window.openSection = openSection;
@@ -601,7 +655,6 @@ function getNextRoll(){
 
 /* ------------------ Fees ------------------ */
 function calcAppFee(){
-  // amount fixed for all classes (as requested)
   q('app_fee').value = FIXED_AMOUNT;
 }
 window.calcAppFee = calcAppFee;
@@ -611,24 +664,41 @@ calcAppFee();
 function renderAppsList(){
   const apps = readApps();
   const el = q('appsList');
-  if(!apps.length){ el.textContent='No applications yet.'; return; }
-  el.innerHTML = '';
-  apps.slice().reverse().forEach(a=>{
-    const d = document.createElement('div');
-    d.className = 'result-row';
-    d.innerHTML = `<div style="display:flex;gap:10px;align-items:center">
-                    <img src="${a.photo||a.feeImage||''}" onerror="this.style.display='none'" style="width:48px;height:48px;border-radius:6px;object-fit:cover"/>
-                    <div><strong>${escapeHtml(a.name)} ${escapeHtml(a.surname)}</strong><div class="small">Roll: ${a.roll} • ${escapeHtml(a.class)} • Fee: ${a.appFee}</div></div>
-                   </div>
-                   <div style="display:flex;flex-direction:column;gap:6px">
-                     <button class="btn btn-ghost" onclick="quickView('${a.roll}')">View Slip</button>
-                     <div class="small">Payment: <strong>${a.paymentStatus}</strong></div>
-                   </div>`;
-    el.appendChild(d);
+  
+  if(!apps || apps.length === 0){ 
+    el.innerHTML = '<div style="text-align:center;padding:20px;color:#666;background:#f8fafc;border-radius:8px;">No applications yet. Submit your first application!</div>'; 
+    return; 
+  }
+  
+  let html = '<h4 style="margin-bottom:10px;color:var(--accent);">Recent Applications</h4>';
+  
+  // Show latest applications first
+  apps.slice().reverse().forEach(a => {
+    html += `
+      <div class="result-row">
+        <div style="display:flex;gap:10px;align-items:center">
+          <img src="${a.photo||a.feeImage||''}" 
+               onerror="this.style.display='none'" 
+               style="width:48px;height:48px;border-radius:6px;object-fit:cover"/>
+          <div>
+            <strong>${escapeHtml(a.name)} ${escapeHtml(a.surname)}</strong>
+            <div class="small">Roll: ${a.roll} • Class: ${escapeHtml(a.class)}</div>
+            <div class="small">Fee: ${a.appFee} • Status: 
+              <span style="color:${a.paymentStatus === 'Approved' ? 'green' : a.paymentStatus === 'Rejected' ? 'red' : 'orange'}">
+                ${a.paymentStatus}
+              </span>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <button class="btn btn-ghost" onclick="quickView('${a.roll}')">View Slip</button>
+        </div>
+      </div>`;
   });
+  
+  el.innerHTML = html;
 }
 
-/* quick view */
 function quickView(roll){
   q('slip_roll').value = roll;
   openSection('slip');
@@ -646,152 +716,196 @@ function applyFormReset(){
   applyConfirm.classList.add('hidden');
   applyConfirm.innerHTML = '';
   applyForm.classList.remove('hidden');
+  showToast('Form reset successfully');
 }
 window.applyFormReset = applyFormReset;
 
-// When user clicks Proceed to Payment we validate and open payment modal with snapshot
+// When user clicks Proceed to Payment
 q('proceedPaymentBtn').addEventListener('click', function(){
-  // basic validations
+  // Basic validations
+  const name = q('stu_name').value.trim();
+  const surname = q('stu_surname').value.trim();
   const cnic = q('stu_cnic').value.trim();
-  if(!q('stu_name').value.trim() || !q('stu_surname').value.trim()){ alert('Please enter student name and surname'); return; }
-  if(!q('stu_class').value){ alert('Select class'); return; }
-  if(cnic && cnic.length !== 13){ alert('Student CNIC must be 13 digits'); return; }
-  const fcnic = q('father_cnic').value.trim();
-  if(fcnic && fcnic.length !== 13){ alert('Father CNIC must be 13 digits'); return; }
-  const wa = q('stu_whatsapp').value.trim();
-  if(wa && wa.length!==11 && wa.length!==0){ alert('WhatsApp number must be 11 digits (or leave empty)'); return; }
-
-  // prepare snapshot (store files references)
+  const stuClass = q('stu_class').value;
+  const fatherCnic = q('father_cnic').value.trim();
+  const whatsapp = q('stu_whatsapp').value.trim();
+  
+  if(!name || !surname){ 
+    alert('Please enter student name and surname'); 
+    return; 
+  }
+  
+  if(!stuClass){ 
+    alert('Please select class'); 
+    return; 
+  }
+  
+  if(cnic && cnic.length !== 13){ 
+    alert('Student CNIC must be 13 digits'); 
+    return; 
+  }
+  
+  if(fatherCnic && fatherCnic.length !== 13){ 
+    alert('Father CNIC must be 13 digits'); 
+    return; 
+  }
+  
+  if(whatsapp && whatsapp.length !== 11){ 
+    alert('WhatsApp number must be 11 digits'); 
+    return; 
+  }
+  
+  // Prepare snapshot
   const snapshot = {
     roll: getNextRoll(),
-    name: q('stu_name').value.trim(),
-    surname: q('stu_surname').value.trim(),
+    name: name,
+    surname: surname,
     gender: q('stu_gender').value,
     dob: q('stu_dob').value,
-    cnic,
-    class: q('stu_class').value,
+    cnic: cnic,
+    class: stuClass,
     pastSchool: q('stu_pastSchool').value.trim(),
-    whatsapp: wa,
+    whatsapp: whatsapp,
     photoFile: q('stu_photo').files && q('stu_photo').files[0] ? q('stu_photo').files[0] : null,
     appFee: FIXED_AMOUNT,
     fatherName: q('father_name').value.trim(),
     fatherSurname: q('father_surname').value.trim(),
-    fatherCnic: fcnic,
+    fatherCnic: fatherCnic,
     fatherOccupation: q('father_occupation').value.trim()
   };
-
+  
   openPaymentModal(snapshot);
 });
 
-/* ------------------ PAYMENT MODAL (NEW) ------------------ */
+/* ------------------ PAYMENT MODAL ------------------ */
 const paymentModal = q('paymentModal');
 const paymentForm = q('paymentForm');
 let currentSnapshot = null;
 
 function openPaymentModal(snapshot){
   currentSnapshot = snapshot;
-  // prefill fields
   q('pay_student_name').value = snapshot.name || '';
   q('pay_amount').value = FIXED_AMOUNT;
   q('pay_from_number').value = '';
   q('pay_txn').value = '';
   q('pay_screenshot').value = '';
   
-  // Reset preview
   const preview = q('pay_preview');
   preview.src = '';
   preview.classList.add('hidden');
   
-  // Show modal
   paymentModal.style.display = 'flex';
   paymentModal.setAttribute('aria-hidden','false');
-  
-  // Focus on first input
-  setTimeout(() => q('pay_from_number').focus(), 100);
 }
 
-q('cancelPay').addEventListener('click', ()=> {
+q('cancelPay').addEventListener('click', () => {
   paymentModal.style.display = 'none';
   paymentModal.setAttribute('aria-hidden','true');
   currentSnapshot = null;
-
 });
 
-// preview screenshot when selected
-// preview screenshot when selected
+// Preview screenshot
 q('pay_screenshot').addEventListener('change', function(){
-  const f = this.files && this.files[0];
+  const file = this.files && this.files[0];
   const img = q('pay_preview');
-  const container = q('previewContainer');
   
-  if(!f){ 
-    img.src=''; 
+  if(!file){ 
+    img.src = ''; 
     img.classList.add('hidden'); 
     return; 
   }
   
-  // File size check (optional)
-  if(f.size > 10 * 1024 * 1024) { // 10MB limit
+  if(file.size > 10 * 1024 * 1024){
     alert('File size should be less than 10MB');
     this.value = '';
     return;
   }
   
   const reader = new FileReader();
-  reader.onload = function(){ 
-    img.src = reader.result; 
+  reader.onload = function(){
+    img.src = reader.result;
     img.classList.remove('hidden');
-    
-    // Ensure image doesn't overflow
-    img.style.maxWidth = '100%';
-    img.style.maxHeight = '80px';
-    img.style.objectFit = 'contain';
   };
-  reader.readAsDataURL(f);
+  reader.onerror = function(){
+    alert('Error reading file');
+    this.value = '';
+  };
+  reader.readAsDataURL(file);
 });
 
-// Payment form submit -> read screenshot & photo then save application with payment pending
+// Payment form submit
 paymentForm.addEventListener('submit', function(e){
   e.preventDefault();
-  if(!currentSnapshot){ alert('No application data found. Please refill the form.'); paymentModal.style.display='none'; return; }
+  
+  if(!currentSnapshot){ 
+    alert('No application data found. Please refill the form.'); 
+    paymentModal.style.display = 'none'; 
+    return; 
+  }
 
-  // validate payment fields
   const fromNum = q('pay_from_number').value.trim();
-  if(!/^03[0-9]{9}$/.test(fromNum)){ alert('Payment number must be in 03XXXXXXXXX format'); return; }
   const txn = q('pay_txn').value.trim();
-  if(!txn){ alert('Enter transaction ID / reference'); return; }
   const feeFile = q('pay_screenshot').files && q('pay_screenshot').files[0];
-  if(!feeFile){ alert('Upload transaction screenshot'); return; }
+  
+  if(!/^03[0-9]{9}$/.test(fromNum)){ 
+    alert('Payment number must be in 03XXXXXXXXX format'); 
+    return; 
+  }
+  
+  if(!txn){ 
+    alert('Enter transaction ID / reference'); 
+    return; 
+  }
+  
+  if(!feeFile){ 
+    alert('Upload transaction screenshot'); 
+    return; 
+  }
 
-  // attach payment info to snapshot and read files
   currentSnapshot.paymentSenderNumber = fromNum;
   currentSnapshot.txnId = txn;
   currentSnapshot.feeFile = feeFile;
 
-  // read files (screenshot and student photo if any)
   readFilesAndSave(currentSnapshot, { approved: false });
-  paymentModal.style.display = 'none';
-  paymentModal.setAttribute('aria-hidden','true');
-  currentSnapshot = null;
 });
 
-/* read files and save application */
+/* Read files and save application */
 function readFilesAndSave(snapshot, opts){
   const feeFile = snapshot.feeFile;
   const photoFile = snapshot.photoFile;
 
-  const readFee = (cb)=> {
-    if(!feeFile){ cb(''); return; }
-    const r = new FileReader();
-    r.onload = function(){ cb(r.result); };
-    r.readAsDataURL(feeFile);
+  const readFee = (callback) => {
+    if(!feeFile){ 
+      callback(''); 
+      return; 
+    }
+    
+    const reader = new FileReader();
+    reader.onload = function(){ 
+      callback(reader.result); 
+    };
+    reader.onerror = function(){ 
+      console.error('Error reading fee file');
+      callback(''); 
+    };
+    reader.readAsDataURL(feeFile);
   };
 
-  const readPhoto = (cb)=> {
-    if(!photoFile){ cb(''); return; }
-    const r = new FileReader();
-    r.onload = function(){ cb(r.result); };
-    r.readAsDataURL(photoFile);
+  const readPhoto = (callback) => {
+    if(!photoFile){ 
+      callback(''); 
+      return; 
+    }
+    
+    const reader = new FileReader();
+    reader.onload = function(){ 
+      callback(reader.result); 
+    };
+    reader.onerror = function(){ 
+      console.error('Error reading photo file');
+      callback(''); 
+    };
+    reader.readAsDataURL(photoFile);
   };
 
   readFee(function(feeData){
@@ -801,554 +915,487 @@ function readFilesAndSave(snapshot, opts){
   });
 }
 
+/* FIXED: Save Application Function */
 function saveApplication(snapshot, feeData, photoData, opts){
-  const app = {
-    roll: snapshot.roll,
-    name: snapshot.name,
-    surname: snapshot.surname,
-    gender: snapshot.gender,
-    dob: snapshot.dob,
-    cnic: snapshot.cnic,
-    class: snapshot.class,
-    pastSchool: snapshot.pastSchool,
-    whatsapp: snapshot.whatsapp,
-    photo: photoData,
-    feeImage: feeData,
-    paymentStatus: opts.approved ? 'Approved' : 'Pending',
-    appFee: snapshot.appFee,
-    paymentSenderNumber: snapshot.paymentSenderNumber || '',
-    fatherName: snapshot.fatherName,
-    fatherSurname: snapshot.fatherSurname,
-    fatherCnic: snapshot.fatherCnic,
-    fatherOccupation: snapshot.fatherOccupation,
-    txId: snapshot.txnId || '',
-    createdAt: new Date().toISOString()
-  };
-  const apps = readApps();
-  apps.push(app);
-  saveApps(apps);
+  try {
+    const app = {
+      roll: snapshot.roll,
+      name: snapshot.name,
+      surname: snapshot.surname,
+      gender: snapshot.gender,
+      dob: snapshot.dob,
+      cnic: snapshot.cnic,
+      class: snapshot.class,
+      pastSchool: snapshot.pastSchool,
+      whatsapp: snapshot.whatsapp,
+      photo: photoData || '',
+      feeImage: feeData || '',
+      paymentStatus: opts.approved ? 'Approved' : 'Pending',
+      appFee: snapshot.appFee,
+      paymentSenderNumber: snapshot.paymentSenderNumber || '',
+      fatherName: snapshot.fatherName,
+      fatherSurname: snapshot.fatherSurname,
+      fatherCnic: snapshot.fatherCnic,
+      fatherOccupation: snapshot.fatherOccupation,
+      txId: snapshot.txnId || '',
+      createdAt: new Date().toISOString()
+    };
 
-  // confirmation block
-  applyConfirm.classList.remove('hidden');
-  applyConfirm.innerHTML = `
-    <div class="confirm-box">
-      <img src="${escapeHtml(photoData||feeData||'')}" class="stu-photo" onerror="this.style.display='none'"/>
-      <div>
-        <div style="font-weight:800;color:#0f172a">Application Submitted</div>
-        <div style="margin-top:6px"><strong>Roll:</strong> ${app.roll}</div>
-        <div><strong>${escapeHtml(app.name)} ${escapeHtml(app.surname)}</strong> • ${escapeHtml(app.gender)}</div>
-        <div class="small">Class: ${escapeHtml(app.class)} • DOB: ${escapeHtml(app.dob)}</div>
-        <div class="small">Fee: ${app.appFee} • Payment: ${app.paymentStatus}</div>
-        <div class="small">Payment Sent From: <strong>${escapeHtml(app.paymentSenderNumber)}</strong></div>
-        <div class="small" style="margin-top:8px;color:orange">Payment pending — admin will verify screenshot.</div>
-        <div style="margin-top:8px;display:flex;gap:8px">
-          <button class="btn btn-primary" onclick="copyRoll('${app.roll}')">Copy Roll</button>
-          <button class="btn btn-ghost" onclick="openSection('slip'); q('slip_roll').value='${app.roll}'; genSlip()">View Slip</button>
-          <button class="btn" onclick="applyFormReset()">Close</button>
+    let apps = readApps();
+    apps.push(app);
+    
+    if(saveApps(apps)){
+      // Show confirmation
+      applyConfirm.classList.remove('hidden');
+      applyConfirm.innerHTML = `
+        <div class="confirm-box">
+          <img src="${photoData || feeData || ''}" class="stu-photo" onerror="this.style.display='none'"/>
+          <div>
+            <div style="font-weight:800;color:#0f172a;font-size:18px;">✅ Application Submitted Successfully!</div>
+            <div style="margin-top:8px"><strong>Roll Number:</strong> <span style="color:var(--accent);font-size:20px;">${app.roll}</span></div>
+            <div><strong>${escapeHtml(app.name)} ${escapeHtml(app.surname)}</strong> • ${escapeHtml(app.gender)}</div>
+            <div class="small">Class: ${escapeHtml(app.class)} • DOB: ${escapeHtml(app.dob)}</div>
+            <div class="small">Fee: ${app.appFee} • Status: <span style="color:orange">${app.paymentStatus}</span></div>
+            <div class="small">Payment From: <strong>${escapeHtml(app.paymentSenderNumber)}</strong></div>
+            <div class="small" style="margin-top:8px;color:orange;background:#fff3cd;padding:8px;border-radius:5px;">
+              ⚠️ Payment pending verification. Admin will verify within 24 hours.
+            </div>
+            <div style="margin-top:15px;display:flex;gap:8px;flex-wrap:wrap;">
+              <button class="btn btn-primary" onclick="copyRoll('${app.roll}')">📋 Copy Roll</button>
+              <button class="btn btn-ghost" onclick="openSection('slip'); q('slip_roll').value='${app.roll}'; genSlip()">👁️ View Slip</button>
+              <button class="btn" onclick="applyFormReset()">❌ Close</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  `;
-  applyForm.reset();
-  applyForm.classList.add('hidden');
-
-  renderAppsList();
-  if(!q('adminArea').classList.contains('hidden')) loadAdminData();
-  showToast('Application submitted — payment pending verification');
+      `;
+      
+      applyForm.reset();
+      applyForm.classList.add('hidden');
+      paymentModal.style.display = 'none';
+      paymentModal.setAttribute('aria-hidden','true');
+      currentSnapshot = null;
+      
+      renderAppsList();
+      
+      if(!q('adminArea').classList.contains('hidden')){
+        loadAdminData();
+      }
+      
+      showToast('✅ Application saved successfully! Roll: ' + app.roll);
+    } else {
+      alert('Failed to save application. Please try again.');
+    }
+    
+  } catch (error) {
+    console.error('Error in saveApplication:', error);
+    alert('Error: ' + error.message);
+  }
 }
 
-/* copy roll */
-function copyRoll(r){ navigator.clipboard && navigator.clipboard.writeText(r).then(()=> showToast('Roll copied')); }
+function copyRoll(r){ 
+  navigator.clipboard.writeText(r).then(() => {
+    showToast('Roll number copied to clipboard: ' + r);
+  }).catch(() => {
+    prompt('Copy this roll number:', r);
+  });
+}
 
-/* ------------------ Slip generation (Final Fixed Version) ------------------ */
+/* ------------------ Slip generation ------------------ */
 q('genSlipBtn').addEventListener('click', genSlip);
 
 function genSlip(){
   const roll = q('slip_roll').value.trim();
-  if(!roll){ alert('Enter roll number'); return; }
+  if(!roll){ 
+    alert('Enter roll number'); 
+    return; 
+  }
 
   const apps = readApps();
-  const a = apps.find(x=>x.roll === roll);
+  const app = apps.find(x => x.roll === roll);
 
-  if(!a){
-    q('slipArea').innerHTML = '<div class="small">Roll not found</div>';
+  if(!app){
+    q('slipArea').innerHTML = '<div class="small" style="color:red;padding:20px;text-align:center;">Roll number not found</div>';
     return;
   }
 
-  if(a.paymentStatus !== 'Approved'){
+  if(app.paymentStatus !== 'Approved'){
     q('slipArea').innerHTML = `
-      <div class="small" style="color:red;font-size:16px;padding:10px">
-        Payment not verified (Status: ${escapeHtml(a.paymentStatus)}). Contact admin.
+      <div style="color:red;font-size:16px;padding:20px;text-align:center;background:#ffe6e6;border-radius:10px;">
+        <strong>⚠️ Payment Not Verified</strong><br>
+        Status: ${escapeHtml(app.paymentStatus)}<br>
+        Contact admin for verification.
       </div>`;
     return;
   }
 
   q('slipArea').innerHTML = `
-  <div class="slip-wrapper">
-
-    <div class="slip-header">
-      <img src="logo dua Academy kamoon shaheed.PNG" class="academy-logo" onerror="this.style.display='none'">
-      <div class="academy-name">Dua Educational Academy Kamoon Shaheed</div>
-    </div>
-
-    <div class="slip-card">
-      <div class="photo-box">
-        <img src="${a.photo || ''}" class="stu-photo" onerror="this.style.display='none'">
+    <div class="slip-wrapper">
+      <div class="slip-header">
+        <img src="logo dua Academy kamoon shaheed.PNG" class="academy-logo" onerror="this.style.display='none'">
+        <div class="academy-title">Dua Educational Academy Kamoon Shaheed</div>
       </div>
-
-      <div class="info-area">
-        <h2 class="slip-title">Student Admit Slip</h2>
-
-        <div class="row"><strong>Name:</strong> ${escapeHtml(a.name)} ${escapeHtml(a.surname)}</div>
-        <div class="row"><strong>Gender:</strong> ${escapeHtml(a.gender)}
-          &nbsp; | &nbsp; <strong>DOB:</strong> ${escapeHtml(a.dob)}
+      
+      <div class="slip-box">
+        <div class="left-photo">
+          <img src="${app.photo || ''}" class="stu-photo" onerror="this.style.display='none'">
         </div>
-        <div class="row"><strong>Class:</strong> ${escapeHtml(a.class)}</div>
-        <div class="row"><strong>Roll No:</strong> <span class="roll-tag">${escapeHtml(a.roll)}</span></div>
-        <div class="row"><strong>Fee:</strong> ${a.appFee}
-          &nbsp; | &nbsp; <strong>Payment:</strong> ${escapeHtml(a.paymentStatus)}
+        
+        <div class="data">
+          <div class="slip-heading">Student Admit Slip</div>
+          
+          <div class="field"><strong>Name:</strong> ${escapeHtml(app.name)} ${escapeHtml(app.surname)}</div>
+          <div class="field"><strong>Gender:</strong> ${escapeHtml(app.gender)} | <strong>DOB:</strong> ${escapeHtml(app.dob)}</div>
+          <div class="field"><strong>CNIC:</strong> ${escapeHtml(app.cnic)}</div>
+          <div class="field"><strong>Class:</strong> ${escapeHtml(app.class)}</div>
+          
+          <div class="small-heading">Roll Number</div>
+          <div class="roll-style">${escapeHtml(app.roll)}</div>
+          
+          <div class="field"><strong>Application Fee:</strong> Rs. ${app.appFee}</div>
+          <div class="field"><strong>Payment Status:</strong> <span style="color:green">${escapeHtml(app.paymentStatus)}</span></div>
+          <div class="field"><strong>Payment From:</strong> ${escapeHtml(app.paymentSenderNumber || 'N/A')}</div>
+          <div class="field"><strong>WhatsApp:</strong> ${escapeHtml(app.whatsapp || 'N/A')}</div>
+          <div class="field"><strong>Past School:</strong> ${escapeHtml(app.pastSchool || 'N/A')}</div>
+          
+          <div class="small-heading">Father Information</div>
+          <div class="field"><strong>Name:</strong> ${escapeHtml(app.fatherName)} ${escapeHtml(app.fatherSurname)}</div>
+          <div class="field"><strong>CNIC:</strong> ${escapeHtml(app.fatherCnic)}</div>
+          <div class="field"><strong>Occupation:</strong> ${escapeHtml(app.fatherOccupation || 'N/A')}</div>
         </div>
-        <div class="row"><strong>Payment Sent From:</strong> ${escapeHtml(a.paymentSenderNumber || 'N/A')}</div>
-        <div class="row"><strong>WhatsApp:</strong> ${escapeHtml(a.whatsapp || 'N/A')}</div>
-        <div class="row"><strong>Past School:</strong> ${escapeHtml(a.pastSchool || 'N/A')}</div>
-
-        <h3 class="father-title">Father Information</h3>
-        <div class="row">
-          <strong>${escapeHtml(a.fatherName)} ${escapeHtml(a.fatherSurname)}</strong>
-          &nbsp; | &nbsp; CNIC: ${escapeHtml(a.fatherCnic)}
-          &nbsp; | &nbsp; ${escapeHtml(a.fatherOccupation || 'Occupation N/A')}
+      </div>
+      
+      <div class="sign-row">
+        <div>
+          <img src="director_sign.png" class="sign-img" onerror="this.style.display='none'">
+          <div class="sign-text">Director Signature</div>
+        </div>
+        <div>
+          <img src="stamp.png" class="stamp-img" onerror="this.style.display='none'">
+          <div class="sign-text">Official Stamp</div>
         </div>
       </div>
-    </div>
-
-    <div class="bottom-sign">
-      <div class="sign-block">
-        <img src="director_sign.png" class="sign-img" onerror="this.style.display='none'">
-        <div class="sign-text">Director Signature</div>
-      </div>
-      <div class="stamp-block">
-        <img src="stamp.png" class="stamp-img" onerror="this.style.display='none'">
-        <div class="sign-text">Official Stamp</div>
-      </div>
-    </div>
-
-  </div>`;
+    </div>`;
 }
 
+/* ------------------ PRINT SLIP ------------------ */
+q('printSlipBtn').addEventListener('click', () => {
+  if(!q('slipArea').innerHTML){ 
+    alert('No slip to print'); 
+    return; 
+  }
 
-/* ------------------ PRINT (Fixed – Always One Page) ------------------ */
-q('printSlipBtn').addEventListener('click', ()=>{
-  if(!q('slipArea').innerHTML){ alert('No slip to print'); return; }
-
-  const win = window.open('', '_blank');
-
-  const styles = `
-  <style>
-    body{font-family:Arial, sans-serif;margin:0;padding:0}
-
-    .slip-wrapper{
-      border:4px solid #0057d9;
-      background:white;
-      padding:25px;
-      border-radius:18px;
-      width:780px;
-      margin:auto;
-    }
-
-    .slip-header{
-      display:flex;align-items:center;gap:15px;
-      border-bottom:3px solid #0057d9;padding-bottom:10px;margin-bottom:20px;
-    }
-
-    .academy-logo{width:70px;height:70px;border-radius:50%}
-    .academy-name{font-size:26px;font-weight:900;color:#003b99}
-
-    .slip-card{
-      display:flex;gap:20px;background:#e9f1ff;
-      padding:20px;border-radius:15px;border:2px solid #004fc3;
-    }
-
-    .photo-box{
-      width:120px;height:140px;border:2px solid #004fc3;
-      border-radius:10px;background:white;overflow:hidden;
-    }
-
-    .stu-photo{width:100%;height:100%;object-fit:cover}
-
-    .slip-title{font-size:22px;font-weight:800;color:#003b99;margin-bottom:10px}
-    .row{padding:4px 0;font-size:15px}
-
-    .roll-tag{background:#004fc3;color:white;padding:3px 8px;border-radius:5px}
-
-    .bottom-sign{
-      display:flex;justify-content:space-between;
-      margin-top:25px;padding-top:15px;border-top:3px solid #0057d9;
-    }
-
-    .sign-img,.stamp-img{width:120px;height:auto}
-
-    @page { size:A4 portrait; margin:0; }
-
-    @media print {
-      body { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-      .slip-wrapper{
-        width:780px !important;
-        transform:scale(0.96);
-        transform-origin:top left;
-        page-break-inside:avoid;
-      }
-    }
-  </style>`;
-
-  win.document.write(`<html><head><title>Admit Slip</title>${styles}</head><body>${q('slipArea').innerHTML}</body></html>`);
-  win.document.close();
-  win.focus();
-  win.print();
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`
+    <html>
+      <head>
+        <title>Admit Slip - ${ACADEMY_NAME}</title>
+        <style>
+          body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+          .slip-wrapper { border: 3px solid #0077ff; padding: 25px; border-radius: 12px; }
+          .academy-title { font-size: 24px; font-weight: bold; color: #00306e; text-align: center; margin-bottom: 20px; }
+          .slip-box { display: flex; gap: 20px; margin: 20px 0; }
+          .stu-photo { width: 140px; height: 160px; object-fit: cover; border: 2px solid #00306e; border-radius: 10px; }
+          .roll-style { font-size: 18px; padding: 5px 15px; color: white; background: #0077ff; border-radius: 8px; display: inline-block; font-weight: bold; }
+          .sign-row { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc; }
+          @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+        </style>
+      </head>
+      <body>
+        ${q('slipArea').innerHTML}
+      </body>
+    </html>
+  `);
+  printWindow.document.close();
+  printWindow.focus();
+  setTimeout(() => {
+    printWindow.print();
+    printWindow.close();
+  }, 500);
 });
 
-/* ------------------ RESULTS (Final Fixed Version) ------------------ */
-q('checkResBtn').addEventListener('click', function () {
+/* ------------------ RESULTS ------------------ */
+q('checkResBtn').addEventListener('click', function(){
   const roll = q('res_roll').value.trim();
-
-  if (!roll) {
-    alert('Enter roll number');
-    return;
+  
+  if(!roll){ 
+    alert('Enter roll number'); 
+    return; 
   }
 
   const apps = readApps();
-  const a = apps.find(x => x.roll === roll);
+  const app = apps.find(x => x.roll === roll);
 
-  if (!a) {
-    q('resultArea').innerHTML = '<div class="small">Roll not found</div>';
+  if(!app){
+    q('resultArea').innerHTML = '<div class="small" style="color:red;padding:20px;text-align:center;">Roll number not found</div>';
     return;
   }
 
-  const marks = readMarks()
-    .filter(m => m.rollNumber === roll)
-    .map(m => m.marks);
-
-  const grade = marks.length ? calculateGrade(avg(marks)) : 'N/A';
+  const marks = readMarks().filter(m => m.rollNumber === roll).map(m => m.marks);
+  const avgMark = marks.length ? (marks.reduce((a, b) => a + Number(b), 0) / marks.length).toFixed(2) : 0;
+  const grade = marks.length ? calculateGrade(avgMark) : 'N/A';
 
   q('resultArea').innerHTML = `
-  <div class="result-wrapper">
-
-    <div class="res-header">
-      <img src="logo dua Academy kamoon shaheed.PNG" class="res-logo" onerror="this.style.display='none'">
-      <div class="res-title">Dua Educational Academy Kamoon Shaheed</div>
-    </div>
-
-    <div class="res-card">
-
-      <div class="res-photo-box">
-        <img src="${a.photo || ''}" class="res-photo" onerror="this.style.display='none'">
+    <div class="slip-wrapper">
+      <div class="slip-header">
+        <img src="logo dua Academy kamoon shaheed.PNG" class="academy-logo" onerror="this.style.display='none'">
+        <div class="academy-title">Dua Educational Academy Kamoon Shaheed</div>
       </div>
-
-      <div class="res-info">
-        <h2 class="res-heading">Student Result Card</h2>
-
-        <div class="line"><strong>Name:</strong> ${escapeHtml(a.name)} ${escapeHtml(a.surname)}</div>
-        <div class="line"><strong>Class:</strong> ${escapeHtml(a.class)}</div>
-        <div class="line"><strong>Roll No:</strong> <span class="roll-tag">${escapeHtml(a.roll)}</span></div>
-        <div class="line"><strong>WhatsApp:</strong> ${escapeHtml(a.whatsapp || 'N/A')}</div>
-
-        <h3 class="sub-heading">Marks Details</h3>
-        <div class="line"><strong>Marks:</strong> ${marks.length ? marks.join(', ') : 'Not uploaded'}</div>
-        <div class="line"><strong>Grade:</strong> ${grade}</div>
-
-        <h3 class="sub-heading">Father Information</h3>
-        <div class="line"><strong>${escapeHtml(a.fatherName)} ${escapeHtml(a.fatherSurname)}</strong></div>
-        <div class="line"><strong>CNIC:</strong> ${escapeHtml(a.fatherCnic)}</div>
+      
+      <div class="slip-box">
+        <div class="left-photo">
+          <img src="${app.photo || ''}" class="stu-photo" onerror="this.style.display='none'">
+        </div>
+        
+        <div class="data">
+          <div class="slip-heading">Result Card</div>
+          
+          <div class="field"><strong>Name:</strong> ${escapeHtml(app.name)} ${escapeHtml(app.surname)}</div>
+          <div class="field"><strong>Class:</strong> ${escapeHtml(app.class)}</div>
+          <div class="field"><strong>Roll Number:</strong> <span class="roll-style">${escapeHtml(app.roll)}</span></div>
+          
+          <div class="small-heading">Marks Details</div>
+          <div class="field"><strong>Marks:</strong> ${marks.length ? marks.join(', ') : 'Not uploaded yet'}</div>
+          <div class="field"><strong>Average:</strong> ${avgMark}</div>
+          <div class="field"><strong>Grade:</strong> <span style="font-size:18px;color:${grade === 'Fail' ? 'red' : 'green'}">${grade}</span></div>
+          
+          <div class="field"><strong>Father:</strong> ${escapeHtml(app.fatherName)} ${escapeHtml(app.fatherSurname)}</div>
+          <div class="field"><strong>CNIC:</strong> ${escapeHtml(app.fatherCnic)}</div>
+        </div>
       </div>
-    </div>
-
-    <div class="res-bottom">
-      <div class="sign-box">
-        <img src="director_sign.png" class="sign-img" onerror="this.style.display='none'">
-        <div class="sign-text">Director Signature</div>
+      
+      <div class="sign-row">
+        <div>
+          <img src="director_sign.png" class="sign-img" onerror="this.style.display='none'">
+          <div class="sign-text">Director Signature</div>
+        </div>
+        <div>
+          <img src="stamp.png" class="stamp-img" onerror="this.style.display='none'">
+          <div class="sign-text">Official Stamp</div>
+        </div>
       </div>
-
-      <div class="stamp-box">
-        <img src="stamp.png" class="stamp-img" onerror="this.style.display='none'">
-        <div class="sign-text">Official Stamp</div>
-      </div>
-    </div>
-
-  </div>`;
+    </div>`;
 });
 
-
-/* ------------------ PRINT RESULT (Single Page Perfect PDF) ------------------ */
-
-q('printResultBtn').addEventListener('click', () => {
-  if (!q('resultArea').innerHTML) {
-    alert('No result to print');
-    return;
-  }
-
-  const win = window.open('', '_blank');
-
-  const styles = `
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-
-    .result-wrapper {
-      border: 4px solid #0057d9;
-      background: white;
-      padding: 25px;
-      border-radius: 18px;
-      width: 780px;
-      margin: auto;
-    }
-
-    .res-header {
-      display: flex; align-items: center; gap: 15px;
-      border-bottom: 3px solid #0057d9;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-
-    .res-logo { width: 70px; height: 70px; border-radius: 50%; }
-    .res-title { font-size: 26px; font-weight: 900; color: #003b99; }
-
-    .res-card {
-      display: flex; gap: 20px;
-      background: #e9f1ff;
-      padding: 20px;
-      border-radius: 15px;
-      border: 2px solid #004fc3;
-    }
-
-    .res-photo-box {
-      width: 120px; height: 140px;
-      border: 2px solid #004fc3;
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .res-photo { width: 100%; height: 100%; object-fit: cover; }
-
-    .res-heading { font-size: 22px; font-weight: 800; color: #003b99; margin-bottom: 10px; }
-    .line { padding: 4px 0; font-size: 15px; }
-
-    .sub-heading { font-size: 17px; font-weight: 700; margin: 10px 0 5px; color: #003b99; }
-
-    .roll-tag {
-      background: #004fc3;
-      color: white;
-      padding: 3px 8px;
-      border-radius: 5px;
-    }
-
-    .res-bottom {
-      display: flex; justify-content: space-between;
-      margin-top: 25px;
-      padding-top: 15px;
-      border-top: 3px solid #0057d9;
-    }
-
-    .sign-img, .stamp-img {
-      width: 120px; height: auto;
-    }
-
-    @page { size: A4 portrait; margin: 0; }
-
-    @media print {
-      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-
-      .result-wrapper {
-        width: 780px !important;
-        transform: scale(0.96);
-        transform-origin: top left;
-        page-break-inside: avoid !important;
-      }
-    }
-  </style>`;
-
-  win.document.write(`
-    <html><head><title>Result Card</title>${styles}</head>
-    <body>${q('resultArea').innerHTML}</body></html>
-  `);
-
-  win.document.close();
-  win.focus();
-  win.print();
-});
-
-/* ------------------ Grade Helpers ------------------ */
-function calculateGrade(mark) {
+function calculateGrade(mark){
   mark = Number(mark);
-  if (mark >= 95) return 'A+';
-  if (mark >= 85) return 'A';
-  if (mark >= 75) return 'A-';
-  if (mark >= 65) return 'B+';
-  if (mark >= 60) return 'B';
-  if (mark >= 55) return 'C';
-  if (mark >= 50) return 'D';
+  if(mark >= 95) return 'A+';
+  if(mark >= 85) return 'A';
+  if(mark >= 75) return 'B+';
+  if(mark >= 65) return 'B';
+  if(mark >= 55) return 'C';
+  if(mark >= 50) return 'D';
   return 'Fail';
 }
-function avg(arr) { return (arr.reduce((s, n) => s + Number(n), 0) / arr.length).toFixed(2); }
 
-/* ------------------ ADMIN TABLE & ACTIONS ------------------ */
-const adminLoginForm = q('adminLoginForm');
-const adminArea = q('adminArea');
-const adminTableBody = document.querySelector('#adminTable tbody');
+q('printResultBtn').addEventListener('click', () => {
+  if(!q('resultArea').innerHTML){ 
+    alert('No result to print'); 
+    return; 
+  }
+  
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`
+    <html>
+      <head>
+        <title>Result Card - ${ACADEMY_NAME}</title>
+        <style>
+          body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+          .slip-wrapper { border: 3px solid #28a745; padding: 25px; border-radius: 12px; }
+          .academy-title { font-size: 24px; font-weight: bold; color: #00306e; text-align: center; margin-bottom: 20px; }
+          .slip-box { display: flex; gap: 20px; margin: 20px 0; }
+          .stu-photo { width: 140px; height: 160px; object-fit: cover; border: 2px solid #28a745; border-radius: 10px; }
+          .roll-style { font-size: 18px; padding: 5px 15px; color: white; background: #28a745; border-radius: 8px; display: inline-block; font-weight: bold; }
+          .sign-row { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc; }
+          @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+        </style>
+      </head>
+      <body>
+        ${q('resultArea').innerHTML}
+      </body>
+    </html>
+  `);
+  printWindow.document.close();
+  printWindow.focus();
+  setTimeout(() => {
+    printWindow.print();
+    printWindow.close();
+  }, 500);
+});
 
-adminLoginForm.addEventListener('submit', function(e){
+/* ------------------ ADMIN PANEL ------------------ */
+q('adminLoginForm').addEventListener('submit', function(e){
   e.preventDefault();
-  const val = q('adminPass').value;
-  if(val === ADMIN_PASSWORD){
-    adminLoginForm.classList.add('hidden');
-    adminArea.classList.remove('hidden');
+  const pass = q('adminPass').value;
+  if(pass === ADMIN_PASSWORD){
+    q('adminLoginForm').classList.add('hidden');
+    q('adminArea').classList.remove('hidden');
     loadAdminData();
-  } else alert('Wrong Password');
+    showToast('Admin login successful');
+  } else {
+    alert('Wrong password!');
+  }
 });
 
 function loadAdminData(){
   const apps = readApps();
   const marks = readMarks();
-  adminTableBody.innerHTML = '';
-  apps.forEach(a=>{
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td>${escapeHtml(a.roll)}</td>
-      <td><img src="${a.photo||''}" class="admin-img" onerror="this.style.display='none'"/></td>
-      <td contenteditable="true" data-field="name">${escapeHtml(a.name)}</td>
-      <td contenteditable="true" data-field="surname">${escapeHtml(a.surname)}</td>
-      <td contenteditable="true" data-field="gender">${escapeHtml(a.gender)}</td>
-      <td contenteditable="true" data-field="dob">${escapeHtml(a.dob)}</td>
-      <td contenteditable="true" data-field="cnic">${escapeHtml(a.cnic)}</td>
-      <td contenteditable="true" data-field="class">${escapeHtml(a.class)}</td>
-      <td contenteditable="true" data-field="pastSchool">${escapeHtml(a.pastSchool)}</td>
-      <td contenteditable="true" data-field="whatsapp">${escapeHtml(a.whatsapp)}</td>
-      <td contenteditable="true" data-field="fatherName">${escapeHtml(a.fatherName)}</td>
-      <td contenteditable="true" data-field="fatherSurname">${escapeHtml(a.fatherSurname)}</td>
-      <td contenteditable="true" data-field="fatherCnic">${escapeHtml(a.fatherCnic)}</td>
-      <td contenteditable="true" data-field="fatherOccupation">${escapeHtml(a.fatherOccupation)}</td>
-      <td>${escapeHtml(a.appFee || '')}</td>
-      <td>${escapeHtml(a.paymentSenderNumber || '')}</td>
+  const tbody = document.querySelector('#adminTable tbody');
+  
+  tbody.innerHTML = '';
+  
+  apps.forEach(app => {
+    const appMarks = marks.filter(m => m.rollNumber === app.roll).map(m => m.marks).join(', ');
+    
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${escapeHtml(app.roll)}</td>
+      <td><img src="${app.photo || ''}" class="admin-img" onerror="this.style.display='none'"></td>
+      <td contenteditable="true" data-field="name">${escapeHtml(app.name)}</td>
+      <td contenteditable="true" data-field="surname">${escapeHtml(app.surname)}</td>
+      <td contenteditable="true" data-field="gender">${escapeHtml(app.gender)}</td>
+      <td contenteditable="true" data-field="dob">${escapeHtml(app.dob)}</td>
+      <td contenteditable="true" data-field="cnic">${escapeHtml(app.cnic)}</td>
+      <td contenteditable="true" data-field="class">${escapeHtml(app.class)}</td>
+      <td contenteditable="true" data-field="pastSchool">${escapeHtml(app.pastSchool)}</td>
+      <td contenteditable="true" data-field="whatsapp">${escapeHtml(app.whatsapp)}</td>
+      <td contenteditable="true" data-field="fatherName">${escapeHtml(app.fatherName)}</td>
+      <td contenteditable="true" data-field="fatherSurname">${escapeHtml(app.fatherSurname)}</td>
+      <td contenteditable="true" data-field="fatherCnic">${escapeHtml(app.fatherCnic)}</td>
+      <td contenteditable="true" data-field="fatherOccupation">${escapeHtml(app.fatherOccupation)}</td>
+      <td>${escapeHtml(app.appFee || '')}</td>
+      <td>${escapeHtml(app.paymentSenderNumber || '')}</td>
       <td>
         <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-start">
-          <img src="${a.feeImage||''}" style="width:70px;height:70px;border-radius:6px;object-fit:cover" onerror="this.style.display='none'"/>
-          <div> <strong>${escapeHtml(a.paymentStatus)}</strong> </div>
+          <img src="${app.feeImage || ''}" style="width:70px;height:70px;border-radius:6px;object-fit:cover" onerror="this.style.display='none'"/>
+          <div><strong>${escapeHtml(app.paymentStatus)}</strong></div>
           <div style="display:flex;gap:6px">
             <button class="btn btn-primary btn-approve">Approve</button>
             <button class="btn btn-ghost btn-reject">Reject</button>
           </div>
         </div>
       </td>
-      <td contenteditable="true" data-field="marks">${marks.filter(m=>m.rollNumber===a.roll).map(m=>m.marks).join(', ')}</td>
-      <td><button class="btn btn-primary btn-save">Save</button> <button class="btn btn-ghost btn-delete">Delete</button></td>
+      <td contenteditable="true" data-field="marks">${escapeHtml(appMarks)}</td>
+      <td>
+        <button class="btn btn-primary btn-save">Save</button>
+        <button class="btn btn-ghost btn-delete">Delete</button>
+      </td>
     `;
-    adminTableBody.appendChild(tr);
-
-    tr.querySelector('.btn-approve').addEventListener('click', ()=> setPaymentStatus(a.roll, 'Approved'));
-    tr.querySelector('.btn-reject').addEventListener('click', ()=> setPaymentStatus(a.roll, 'Rejected'));
-
-    tr.querySelector('.btn-delete').addEventListener('click', ()=> {
-      if(!confirm('Delete this application?')) return;
-      let appsAll = readApps();
-      appsAll = appsAll.filter(x=>x.roll!==a.roll);
-      saveApps(appsAll);
-      let marksAll = readMarks();
-      marksAll = marksAll.filter(m=>m.rollNumber!==a.roll);
-      saveMarks(marksAll);
-      loadAdminData();
-      renderAppsList();
-    });
-
-    tr.querySelector('.btn-save').addEventListener('click', ()=> applyAdminEdits(tr, a.roll) );
-
-    tr.querySelectorAll('td[contenteditable]').forEach(td=>{
-      td.addEventListener('blur', ()=> applyAdminEdits(tr, a.roll) );
-    });
+    
+    tbody.appendChild(row);
+    
+    // Add event listeners
+    row.querySelector('.btn-approve').addEventListener('click', () => setPaymentStatus(app.roll, 'Approved'));
+    row.querySelector('.btn-reject').addEventListener('click', () => setPaymentStatus(app.roll, 'Rejected'));
+    row.querySelector('.btn-delete').addEventListener('click', () => deleteApplication(app.roll));
+    row.querySelector('.btn-save').addEventListener('click', () => saveRowChanges(row, app.roll));
   });
 }
 
 function setPaymentStatus(roll, status){
-  let appsAll = readApps();
-  const idx = appsAll.findIndex(x=>x.roll===roll);
-  if(idx === -1) return;
-  appsAll[idx].paymentStatus = status;
-  saveApps(appsAll);
-  loadAdminData();
-  renderAppsList();
-
-  const student = appsAll[idx];
-  if(status === 'Approved'){
-    const msg = `${ACADEMY_NAME}\n\nDear ${student.name},\nYour entry test form has been approved.\nRoll No: ${student.roll}\nStudent: ${student.name} ${student.surname}\nFather: ${student.fatherName} ${student.fatherSurname}\nPayment From: ${student.paymentSenderNumber || 'N/A'}`;
-    alert(`To Student (${student.whatsapp || 'no number'}):\n\n${msg}`);
-    alert(`To Father:\n\n${msg}`);
-    showToast('Payment approved — notifications sent (simulated)');
-  } else {
-    const msg = `${ACADEMY_NAME}\n\nDear ${student.name},\nYour payment has been rejected. Please contact the academy.`;
-    alert(msg);
-    showToast('Payment rejected — student notified (simulated)');
+  let apps = readApps();
+  const index = apps.findIndex(a => a.roll === roll);
+  
+  if(index !== -1){
+    apps[index].paymentStatus = status;
+    saveApps(apps);
+    loadAdminData();
+    renderAppsList();
+    
+    const student = apps[index];
+    showToast(`Payment ${status.toLowerCase()} for ${student.name}`);
   }
 }
 
-function applyAdminEdits(tr, roll){
-  const appsAll = readApps();
-  const idx = appsAll.findIndex(x=>x.roll===roll);
-  if(idx === -1) { alert('Application not found'); return; }
-
-  const cells = tr.querySelectorAll('td[contenteditable]');
-  const app = appsAll[idx];
-
-  cells.forEach(td=>{
-    const field = td.getAttribute('data-field');
-    const text = td.textContent.trim();
-    if(field === 'marks'){
-      const arr = text.split(',').map(s=>s.trim()).filter(s=>s!=='').map(Number).filter(n=>!isNaN(n));
-      let marksAll = readMarks();
-      marksAll = marksAll.filter(m=>m.rollNumber!==roll);
-      arr.forEach(v => marksAll.push({ rollNumber: roll, marks: Number(v) }));
-      saveMarks(marksAll);
-    } else {
-      app[field] = text;
-    }
-  });
-
-  appsAll[idx] = app;
-  saveApps(appsAll);
+function deleteApplication(roll){
+  if(!confirm('Are you sure you want to delete this application?')) return;
+  
+  let apps = readApps();
+  apps = apps.filter(a => a.roll !== roll);
+  saveApps(apps);
+  
+  let marks = readMarks();
+  marks = marks.filter(m => m.rollNumber !== roll);
+  saveMarks(marks);
+  
   loadAdminData();
   renderAppsList();
+  showToast('Application deleted');
 }
 
-/* ------------------ Marks upload ------------------ */
+function saveRowChanges(row, roll){
+  let apps = readApps();
+  const index = apps.findIndex(a => a.roll === roll);
+  
+  if(index !== -1){
+    const cells = row.querySelectorAll('[contenteditable="true"]');
+    cells.forEach(cell => {
+      const field = cell.getAttribute('data-field');
+      const value = cell.textContent.trim();
+      
+      if(field === 'marks'){
+        let marks = readMarks();
+        marks = marks.filter(m => m.rollNumber !== roll);
+        
+        if(value){
+          const markValues = value.split(',').map(m => m.trim()).filter(m => m);
+          markValues.forEach(mark => {
+            marks.push({ rollNumber: roll, marks: Number(mark) });
+          });
+        }
+        
+        saveMarks(marks);
+      } else {
+        apps[index][field] = value;
+      }
+    });
+    
+    saveApps(apps);
+    showToast('Changes saved for ' + apps[index].name);
+  }
+}
+
+/* ------------------ MARKS UPLOAD ------------------ */
 q('marksForm').addEventListener('submit', function(e){
   e.preventDefault();
-  if(q('marksPass').value !== ADMIN_PASSWORD){ alert('Wrong Password'); return; }
-  q('marksArea').classList.remove('hidden');
-  q('marksForm').classList.add('hidden');
+  if(q('marksPass').value === ADMIN_PASSWORD){
+    q('marksForm').classList.add('hidden');
+    q('marksArea').classList.remove('hidden');
+    showToast('Marks upload access granted');
+  } else {
+    alert('Wrong password!');
+  }
 });
 
 q('saveMarksBtn').addEventListener('click', function(){
   const roll = q('marks_roll').value.trim();
-  const val = q('marks_value').value;
-  if(!roll || val==='') { alert('Enter roll and marks'); return; }
-  const apps = readApps();
-  if(!apps.find(x=>x.roll===roll)){ alert('Roll not found'); return; }
-  const marksAll = readMarks();
-  marksAll.push({ rollNumber: roll, marks: Number(val) });
-  saveMarks(marksAll);
-
-  const student = apps.find(x=>x.roll===roll);
-  if(student){
-    const msg = `${ACADEMY_NAME}\n\nDear ${student.name},\nYour test result has been uploaded.\nRoll No: ${student.roll}\nMarks: ${val}`;
-    alert(`To Student (${student.whatsapp || 'no number'}):\n\n${msg}`);
-    alert(`To Father:\n\n${msg}`);
-    showToast('Result uploaded — notifications sent (simulated)');
+  const marksValue = q('marks_value').value;
+  
+  if(!roll || marksValue === ''){
+    alert('Enter roll number and marks');
+    return;
   }
-
-  alert('Marks uploaded');
-  if(!q('adminArea').classList.contains('hidden')) loadAdminData();
+  
+  const apps = readApps();
+  if(!apps.find(a => a.roll === roll)){
+    alert('Roll number not found');
+    return;
+  }
+  
+  let marks = readMarks();
+  marks.push({ rollNumber: roll, marks: Number(marksValue) });
+  saveMarks(marks);
+  
+  showToast('Marks uploaded for roll ' + roll);
+  q('marks_roll').value = '';
+  q('marks_value').value = '';
 });
 
-/* ------------------ INIT ------------------ */
-renderAppsList();
-loadAdminData();
+/* ------------------ INITIALIZATION ------------------ */
+document.addEventListener('DOMContentLoaded', function(){
+  renderAppsList();
+  console.log('Portal loaded successfully');
+  console.log('Applications in storage:', readApps().length);
+});
 </script>
 </body>
 </html>
-
